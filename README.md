@@ -16,6 +16,28 @@ then, to enable your gmail acct to send the email:
 
 and enable the less secure apps
 
+## usage
+
+first create a user
+
+`./autochore.rb new user -n 'Me' -e 'me@gmail.com'`
+
+then start creating chores
+
+`./autochore.rb new chore -t house -n 'Empty Sink' -f 4d -o 'Me'`
+
+then once you have all your chores and users in the system setup a cron job to run `./autochore.rb send` once per day
+
+```
+  $ crontab -e
+
+add the line:
+  
+  0 6 * * * ~/path/to/autochore.rb send
+
+and close the editor (:wq on vim/vi)
+```
+
 ## examples
 
 - remind yourself how this dumb thing works again: `./autochore.rb help`
