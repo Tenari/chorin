@@ -18,6 +18,7 @@ and enable the less secure apps
 
 ## examples
 
+- remind yourself how this dumb thing works again: `./autochore.rb help`
 - create new user named Tom with an email address `./autochore.rb new user -n 'Tom' -e 'tommyodom.austin@gmail.com'`
 - create new "Empty Sink" chore that should be done every 4 days, tagged for the house: `./autochore.rb new chore -t house -n 'Empty Sink' -f 4d`
 - list unassigned (open) chores for the house tag: `./autochore.rb list chores open -t house`
